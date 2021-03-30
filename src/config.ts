@@ -21,22 +21,22 @@ const conf = convict({
         },
         port: {
             format: 'port',
-            default: 5432,
+            default: 27017,
             env: 'DB_PORT',
         },
         name: {
             format: '*',
-            default: 'postgres',
+            default: 'ProductionCounter',
             env: 'DB_NAME',
         },
         username: {
             format: '*',
-            default: 'postgres',
+            default: '',
             env: 'DB_USERNAME',
         },
         password: {
             format: '*',
-            default: 'postgres',
+            default: '',
             env: 'DB_PASSWORD',
         },
     },
